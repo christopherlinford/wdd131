@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .nav {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+        }
+        .main-content {
+            width: 75%;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .aside {
+            width: 25%;
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">Header Content</header>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <div class="container">
+        <div class="main-content">Main Content</div>
+        <aside class="aside">Aside Content</aside>
+    </div>
+    <footer class="footer">Footer Content</footer>
+</body>
+</html>
+
