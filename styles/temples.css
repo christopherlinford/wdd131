@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ariel', sans-serif;
+    background-color: white;
+}
+
+header, main
+footer {
+    max-width: 600px;
+    border: 1px solid lightgray;
+}
+
+header {
+    display: grid; 
+    grid-gap: 1rem;
+    margin: 0 auto;
+    background-color: rgb(202, 21, 169);
+    box-shadow: 0 0 10px gray;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    margin: 1rem 0 0 1rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    font-family: "Ariel", sans-serif;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "Ⓧ";
+}
+
+.navigation {
+    display: flex; 
+    flex-direction: column; 
+    list-style: none; 
+    background-color: rgb(232, 35, 193);
+    color: rgb(212, 33, 203);
+}
+
+.navigation li {/*hides nav in mobile size*/
+    display: none;
+}
+
+.navigation a {
+    display: block; 
+    color: black;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s; 
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover {
+    color: rgb(63, 62, 64);
+    background-color: rgb(240, 240, 240);
+    text-decoration: underline;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+
+.open li {
+    display: block;
+}
+
+.active::before {
+    content: "Home";
+    text-decoration: underline;
+    color: rgb(255, 216, 23);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.temples {
+    margin: 2.5rem;
+}
+
+img {
+    max-width: 100%;
+    border: 4px double black;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+img:hover {
+    box-shadow: 0 0 10px gray;
+}
+
+footer {
+    font-family: "Ariel", sans-serif;
+    background: rgb(161, 20, 163);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+p {
+    color: black;
+}
