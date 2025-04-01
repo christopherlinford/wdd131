@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines</title>
+    <meta name="description" content="Learn about the Philippines. It contains information about the country's area, language, population, currency, and weather.">
+    <meta name="author" content="Christopher Linford">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script> 
+</head>
+
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    
+    <main>
+        <section>
+            <div class="hero-image-container">
+                <picture>
+                    <source srcset="week03/images/hero-large-caraboa.webp" media="(max-width: 1000px)">
+                    <source srcset="week03/images/hero-medium-sunset.webp" media="(min-width: 500px)">
+                    <img src="week03/images/hero-large-caraboa.webp" alt="This is a picture of a Water Buffalo or Carabao">
+                </picture>
+            </div>
+
+            <div class="data-container">
+                <div>
+                    <h3>Data</h3>
+                </div>
+                <div class="info-card">
+                    <div class="info-row"><span class="label">Area</span> <span class="colon"> : </span> <span class="value">300,000 km²</span></div>
+                    <div class="info-row"><span class="label">Population</span> <span class="colon"> : </span><span class="value">114,900,000</span></div>
+                    <div class="info-row"><span class="label">Capital</span><span class="colon"> : </span> <span class="value">Manila</span></div>
+                    <div class="info-row"><span class="label">Languages</span> <span class="colon"> : </span><span class="value">Filipino, English</span></div>
+                    <div class="info-row"><span class="label">Currency</span><span class="colon"> : </span> <span class="value">Philippine Peso</span></div>
+                    <div class="info-row"><span class="label">Time Zone (UTC)</span><span class="colon"> : </span> <span class="value">UTC+8</span></div>
+                    <div class="info-row"><span class="label">Calling Code</span><span class="colon"> : </span> <span class="value">+63</span></div>
+                    <div class="info-row"><span class="label">Internet TLD</span><span class="colon"> : </span> <span class="value">.ph</span></div>
+                </div>
+                
+                <div class="weather-container">
+                    <div class="weather-card">
+                        <h3 class="weather-heading">Weather</h3>
+                        <img class="small-icon" src="week03/images/partly-cloudy.svg" alt="Partly Cloudy Weather Icon">
+                    </div>
+                    <div class="info-card">
+                        <div class="info-row"><span class="label">Temperature</span> <span class="colon"> : </span> <span class="value">10°C</span></div>
+                        <div class="info-row"><span class="label">Conditions</span> <span class="colon"> : </span><span class="value">Partly Cloudy</span></div>
+                        <div class="info-row"><span class="label">Wind</span><span class="colon"> : </span> <span class="value">5 km/h</span></div>
+                        <div class="info-row"><span class="label">Wind Chill</span> <span class="colon"> : </span><span class="value windchill-value">N/A</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> 🌴 Christopher Linford 🌴 Utah</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>    
+</body>
+</html>
