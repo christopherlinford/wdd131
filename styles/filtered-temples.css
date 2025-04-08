@@ -1,135 +1,82 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Ariel', sans-serif;
-    background-color: white;
-}
-
-header, main
-footer {
-    max-width: 600px;
-    border: 1px solid lightgray;
-}
-
-header {
-    display: grid; 
-    grid-gap: 1rem;
-    margin: 0 auto;
-    background-color: rgb(202, 21, 169);
-    box-shadow: 0 0 10px gray;
-}
-
-h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
-    margin: 1rem 0 0 1rem;
-}
-
-h2 {
-    margin: 1rem 0;
-    font-family: "Ariel", sans-serif;
-    font-size: 1.2em;
-    color: black;
+    background-color: #f8f9fa;
+  }
+  
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
     text-align: center;
-    text-decoration: underline;
-}
-
-#menu {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-}
-
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "Ⓧ";
-}
-
-.navigation {
-    display: flex; 
-    flex-direction: column; 
-    list-style: none; 
-    background-color: rgb(232, 35, 193);
-    color: rgb(212, 33, 203);
-}
-
-.navigation li {/*hides nav in mobile size*/
-    display: none;
-}
-
-.navigation a {
-    display: block; 
-    color: black;
-    padding: 0.75rem;
-    text-decoration: none;
-    text-align: center;
-    transition: 0.5s; 
-    font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-
-.navigation a:hover {
-    color: rgb(63, 62, 64);
-    background-color: rgb(240, 240, 240);
-    text-decoration: underline;
-    border-radius: 3px;
-    font-weight: 700;
-}
-
-
-.open li {
-    display: block;
-}
-
-.active::before {
-    content: "Home";
-    text-decoration: underline;
-    color: rgb(255, 216, 23);
-}
-
-main {
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    list-style: none;
+    background-color: #ffffff;
+    margin: 0;
+  }
+  
+  .menu li button {
+    background: white;
+    color: #add3eb;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .menu li button:hover {
+    background-color: #1a1e24;
+  }
+  
+  .temples-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
-}
-
-.temples {
-    margin: 2.5rem;
-}
-
-img {
-    max-width: 100%;
-    border: 4px double black;
-}
-
-figure {
-    margin: 1rem 0;
-}
-
-figcaption {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .temple-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  .temple-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .temple-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .temple-card figcaption {
+    padding: 1rem;
+  }
+  
+  footer {
     text-align: center;
-}
-
-img:hover {
-    box-shadow: 0 0 10px gray;
-}
-
-footer {
-    font-family: "Ariel", sans-serif;
-    background: rgb(161, 20, 163);
-    text-align: center;
-    padding: 0.5rem;
-}
-
-p {
-    color: black;
-}
+    background: #003366;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 600px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
