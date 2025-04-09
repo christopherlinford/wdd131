@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFD700;
+  }
+  
+  header {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .tagline {
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .color-preview {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .color-preview div {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  
+  .dark-gray {
+    background-color: #1E1E1E;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .gold {
+    background-color: #FFD700;
+    color: black;
+    border: 1px solid #aaa;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
