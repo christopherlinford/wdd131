@@ -1,0 +1,36 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+
+  h1, h2 {
+    color: #171219;
+  }
+
+  header {
+    background-color: #F0803C;
+    padding: 1em;
+    text-align: center;
+    color: white;
+  }
+
+  section {
+    margin-bottom: 2em;
+  }
+
+  .wireframe {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  footer {
+    text-align: center;
+    background: #F0803C;
+    color: #171219;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
