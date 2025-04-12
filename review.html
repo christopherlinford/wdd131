@@ -24,10 +24,10 @@
   </footer>
 
   <script>
-    // Update the last modified date
+    
     document.getElementById("last-modified").textContent = document.lastModified;
 
-    // Local storage review counter
+    
     const reviewCount = localStorage.getItem("reviewCount") || 0;
     const newCount = parseInt(reviewCount) + 1;
     localStorage.setItem("reviewCount", newCount);
