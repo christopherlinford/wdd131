@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a session with The Pad Studio using our online form.">
+  <meta name="author" content="Christopher Linford">
+  <title>Booking | The Pad Studio</title>
+  <link rel="stylesheet" href="styles/gsfix.css">
+  <script src="scripts/projectf.js" defer></script>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <img class="logo" src="images/logo.webp" alt="The Pad Studio Logo">
+        <h1>The Pad Studio</h1>
+        <button class="hamburger" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <h2>Book a Session</h2>
+      <p>Fill out the form below to schedule your session at The Pad Studio.</p>
+    </section>
+
+    
+    
+    
+    <form method="get" action="confirmation.html" class="wf1">
+      <fieldset>
+        <legend>Artist's Information</legend>
+        <label>First Name* <input type="text" name="fname" required></label>
+        <label>Last Name* <input type="text" name="lname" required></label>
+        <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+        <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+      </fieldset>
+
+      <fieldset>
+      <legend>Service Wanted</legend>
+      <label>Prefered booking Date <input type="date" name="completeDate"></label>
+      <label>Desired Service
+        <select name="subject">
+          <option value="">Please Select ▼</option>
+          <option value="mastering">Mastering</option>
+          <option value="mixing">Mixing</option>
+          <option value="photography studio rental">Photograpy Studio Rental</option>
+          <option value="Podcast Editing">Podcast Editing</option>
+          <option value="Recording Sessions">Recording Sessions</option>
+          <option value="manufacturing">Video Editing</option>
+        </select>
+        </label>
+      <label>How much time <input type="number" name="hours"></label>
+      </fieldset>
+
+      <input type="submit" value="Book My Session">
+
+      <label for="notes">Additional Notes:</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+
+    </form>
+  </main>
+
+  <footer>
+    
+    <p>&copy; <span id="year"></span> 🌴 Christopher Linford 🌴 Utah</p>
+    <p><a href="references.html">References</a> | Last modified: <span id="lastModified"></span></p>
+    
+    
+  </footer>
+
+ 
+</body>
+</html>
