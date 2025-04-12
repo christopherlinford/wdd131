@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Confirmation</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>Your review has been successfully submitted.</p>
+      <p id="review-count-message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2025 🌴 Christopher Linford 🌴 <br> Utah</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+  </footer>
+
+  <script>
+    // Update the last modified date
+    document.getElementById("last-modified").textContent = document.lastModified;
+
+    // Local storage review counter
+    const reviewCount = localStorage.getItem("reviewCount") || 0;
+    const newCount = parseInt(reviewCount) + 1;
+    localStorage.setItem("reviewCount", newCount);
+
+    document.getElementById("review-count-message").textContent =
+      `You have submitted ${newCount} review${newCount > 1 ? 's' : ''}.`;
+  </script>
+</body>
+</html>
