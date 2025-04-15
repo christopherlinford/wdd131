@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Year and Last Modified 
+    
     const yearSpan = document.getElementById("year");
     const lastModifiedSpan = document.getElementById("lastModified");
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastModifiedElement = document.getElementById("last-modified");
     if (lastModifiedElement) lastModifiedElement.textContent = document.lastModified;
   
-    // Hamburger Toggle 
+    
     const hamburger = document.querySelector(".hamburger");
     const navLinks = document.querySelector(".nav-links");
     if (hamburger && navLinks) {
@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   
-    // Testimonials 
     const testimonials = [
       {
         name: "Jordan M.",
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showTestimonial(currentTestimonial);
     setInterval(rotateTestimonials, 5000); // rotate every 5 sec
   
-    //  Review Count (localStorage) 
+  
     const reviewMsg = document.getElementById("review-count-message");
     if (reviewMsg) {
       const reviewCount = parseInt(localStorage.getItem("reviewCount") || "0");
@@ -76,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       reviewMsg.textContent = `You have submitted ${newCount} review${newCount > 1 ? 's' : ''}.`;
     }
   
-    //  Booking Form 
+  
     const form = document.getElementById('bookingForm');
     if (form) {
       form.addEventListener('submit', function(event) {

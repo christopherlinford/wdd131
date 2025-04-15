@@ -1,4 +1,4 @@
-// Sample testimonials data
+
 const testimonials = [
     {
       name: "Jordan M.",
@@ -32,7 +32,7 @@ const testimonials = [
     showTestimonial(currentTestimonial);
   }
   
-  // Show first testimonial on load
+  
   document.addEventListener("DOMContentLoaded", () => {
     showTestimonial(currentTestimonial);
     setInterval(rotateTestimonials, 5000); // rotate every 5 seconds
